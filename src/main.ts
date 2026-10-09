@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, provideZoneChangeDetection, ChangeDetectionStrategy } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
   standalone: true,
+  changeDetection: ChangeDetectionStrategy.Eager,
   template: `
     <h1>Hello from {{ name }}!</h1>
     <a target="_blank" href="https://angular.dev/overview">
@@ -15,4 +16,4 @@ export class App {
   name = 'Angular';
 }
 
-bootstrapApplication(App);
+bootstrapApplication(App, {providers: [provideZoneChangeDetection()]});
