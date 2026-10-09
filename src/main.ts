@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, provideZoneChangeDetection } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
 
 @Component({
@@ -15,4 +15,4 @@ export class App {
   name = 'Angular';
 }
 
-bootstrapApplication(App);
+bootstrapApplication(App, {providers: [provideZoneChangeDetection()]});
