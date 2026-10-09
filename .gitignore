@@ -1,0 +1,42 @@
+# Compiled output
+/dist
+/tmp
+/out-tsc
+/bazel-out
+
+# Dependencies
+/node_modules
+
+# Node
+npm-debug.log
+yarn-error.log
+.npmrc
+pnpm-debug.log
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Angular cache
+/.angular/cache
+
+# Local environment files
+.env
+.env.local
